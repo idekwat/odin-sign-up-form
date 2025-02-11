@@ -1,35 +1,48 @@
+@font-face {
+    font-family: Norse-Bold;
+    src: url(./assets/Norse-Bold.otf);
+}
+  
 body {
     height: 100%;
     width: 100%;
     margin: 0;
     padding: 0;
+    background-color: whitesmoke;
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+.container {
+    height: 100%;
+    width: 100%;
 }
 .mountain {
     position: absolute;
     top: 0;
     left: 0;
-    width: 30%;
+    width: 38%;
     height: 100%;
 }
 
 #imageText {
-    display: block;
+    display: flex;
     position: absolute;
-    top: 10%;
+    top: 11%;
     left: 0;
-    background-color: white;
-    color: darkblue;
+    background-color: black;
+    color: lightcyan;
     font-size: 5em;
     opacity: 0.5;
-    width: 30%;
-    text-align: center;
-    font-size: 6em;
+    width: 38%;
+    padding: 10px 0 10px 0;
+    justify-content: center;
+    font-size: 7em;
+    font-family: Norse-Bold;
 }
 
 .credits {
     display: block;
     position: absolute;
-    width: 30%;
+    width: 38%;
     top: 94%;
     left: 1;
     text-align: center;
@@ -50,15 +63,99 @@ body {
     color: cyan;
 }
 
-
-.formContainer, .aboutContainer, .signup{
+.rightContainer{
     position: relative;
-    display: block;
-    left: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    left: 38%;
     text-wrap: wrap;
-    max-width: 69%;
-    padding: 6px;
+    max-width: 62%;
+    overflow: auto;
 }
 
 
+.aboutContainer, .signup {
+    height: 30vh;
+}
 
+.formContainer {
+    height: 36vh;
+    background-color: white;
+    box-shadow: 2px 2px 6px black ;
+    width: 100%;
+}
+
+#aboutText, #formHeading {
+    margin-left: 4%;
+    padding: 2px;
+    font-size: 1.4em;
+    line-height: 1.2;
+}
+
+#aboutText {
+    margin-top: 2.6em;
+}
+#smallWords {
+    padding-left: 32em;
+    margin-top: 18em;
+    font-size: 0.1em;
+    color: gray;
+}
+
+.nameFields, .emailPhone, .passwordFields{
+    display: flex;
+    margin-bottom: 20px;
+
+}
+
+#firstName, #lastName, #emailField, #phoneField, #pass1Field, #pass2Field {
+    width: 50%;
+    margin-left: 4%;
+}
+
+label {
+    color: darkcyan;
+    font-size: 0.8em;
+}
+
+.signup {
+    margin-top: 2em;
+    margin-left: 4%;
+    flex-direction: column;
+}
+
+input {
+    height: 50%;
+    padding: 4px;
+    width: 60%;
+    border-radius: 6px;
+    outline: none;
+    border: 1px solid black;
+}
+
+input:focus {
+    border: 2px solid darkcyan;
+    box-shadow: 1px 1px 2px darkblue;
+}
+
+input:invalid {
+    border: 2px solid red;
+}
+
+#createButton {
+    height: 40px;
+    width: 200px;
+    margin-bottom: 1.2em;
+    background-color: skyblue;
+    border-radius: 10px;
+}
+
+.signup a:link{
+    color: skyblue;
+}
+.signup a:visited {
+    color: darkcyan;
+}
+.signup a:hover {
+    color: darkturquoise;
+}

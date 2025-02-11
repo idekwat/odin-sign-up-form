@@ -10,36 +10,60 @@
     <div class="container">
         <div class="imageContainer">
             <img class ="mountain" src="./assets/picture.jpg">
-            <div id="imageText">ODIN</div>
+            <div id="imageText">
+                <img src="./assets/odin-lined.png" style="height:120px" style="width: auto">
+                ODIN
+            </div>
             <div class="credits">Photo by <a href="https://unsplash.com/@marcus_ganahl">Marcus Ganahl</a> on  
                 <a href ="https://unsplash.com/photos/a-snow-covered-mountain-with-a-body-of-water-in-the-foreground-8q6eFLyMeqU">Unsplash</a></p>
             </div>
         </div>
-        <div class ="aboutContainer">
-            <p>THIS IS NOT A REAL ONLINE SERVICE THIS IS AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA. ADD TEXT HERE, EMPHASIZE THIS WORD AND MAYBE ITALICIZE THIS ADD MORE WORDS
-                AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        <div class ="rightContainer">        <div class ="aboutContainer">
+            <p id="aboutText">This is not a real online service! You know you don't need something like this in your life because
+                this is mostly just for random text where we can <b>add bold words </b> and maybe <i>also italicize</i> some random words.
+                <br>But sure, sign up if you want to, I guess.<br><br>You really don't have to.
+                <p id="smallWords">nothing's gonna happen anyway</p>
             </p>
         </div>
         <div class =formContainer>
-            <form action ="" method ="post">
-                <p>LETS DO THIS</p>
-                <label for="first_name">FIRST NAME</label>
-                <input type="text" id="first_name" placeholder="First Name">
-                <label for="last_name">LAST NAME</label>
-                <input type="text" id="last_name" placeholder="Last Name">
-                <label for="email_address">EMAIL</label>
-                <input type="email" id="email_address" placeholder="email@email.com">
-                <label for="phone_number">PHONE NUMBER</label>
-                <input type="tel" id="phone_number" placeholder="+1234567890">
-                <label for="password">PASSWORD</label>
-                <input type="password" id="password">
-                <label for="password">CONFIRM PASSWORD</label>
-                <input type="password" id="password">
+            <form action ="#" method ="get">
+                <p id="formHeading">Let's do this!</p>
+                <div class ="nameFields">
+                    <div id="firstName">
+                        <label for="first_name">FIRST NAME</label><br>
+                        <input type="text" id="first_name" placeholder="First Name">
+                    </div>
+                    <div id="lastName">
+                        <label for="last_name">LAST NAME</label><br>
+                        <input type="text" id="last_name" placeholder="Last Name">
+                    </div>
+                </div>
+                <div class="emailPhone">
+                    <div id="emailField">
+                        <label for="email_address">EMAIL</label><br>
+                        <input type="email" id="email_address" placeholder="email@email.com">
+                    </div>
+                    <div id="phoneField">
+                        <label for="phone_number">PHONE NUMBER</label><br>
+                        <input type="tel" id="phone_number" placeholder="+1234567890" maxlength="11">
+                    </div>
+                </div>
+                <div class="passwordFields">
+                    <div id="pass1Field">
+                        <label for="password1">PASSWORD</label><br>
+                        <input type="password" id="password1" required>
+                    </div>
+                    <div id="pass2Field">
+                        <label for="password2">CONFIRM PASSWORD</label><br>
+                        <input type="password" id="password2" required>
+                    </div>
+                </div>
             </form>
         </div>
         <div class ="signup">
             <button type="submit" id="createButton">Create Account</button>
             <p>Already have an account? <a href="">Log in</a></p>
+        </div>
         </div>
     </div>
 </body>
