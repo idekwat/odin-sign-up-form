@@ -1,4 +1,64 @@
 body {
     height: 100%;
     width: 100%;
+    margin: 0;
+    padding: 0;
 }
+.mountain {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 100%;
+}
+
+#imageText {
+    display: block;
+    position: absolute;
+    top: 10%;
+    left: 0;
+    background-color: white;
+    color: darkblue;
+    font-size: 5em;
+    opacity: 0.5;
+    width: 30%;
+    text-align: center;
+    font-size: 6em;
+}
+
+.credits {
+    display: block;
+    position: absolute;
+    width: 30%;
+    top: 94%;
+    left: 1;
+    text-align: center;
+    color: white;
+    font-size: 1.3em;
+    text-shadow: 1px 1px black;
+    margin: 0;
+    padding: 0;
+}
+
+.credits a:link{
+    color: white;
+}
+.credits a:visited {
+    color: aquamarine;
+}
+.credits a:hover {
+    color: cyan;
+}
+
+
+.formContainer, .aboutContainer, .signup{
+    position: relative;
+    display: block;
+    left: 30%;
+    text-wrap: wrap;
+    max-width: 69%;
+    padding: 6px;
+}
+
+
+
