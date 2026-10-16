@@ -1,9 +1,83 @@
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-img {
-    max-height: 100vh;
+@font-face {
+    font-family: Norse-font;
+    src: url(fonts/Norse.otf);
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+.center, .sign-up-container, .form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    height: 100vh;
+}
+
+.sign-up-container {
+    height: 80%;
+    flex-direction: row;
+    background-color: whitesmoke;
+    border-radius: 30px 10px;
+    border: 1px solid bisque;
+    box-shadow: 10px 10px 10px burlywood;
+}
+
+.image-container {
+    position: relative;
+    color: black;
+    text-align: center;
+    height: 100%;
+    padding: 40px;
+}
+
+.image-container img {
+    border-radius: 20px;
+    height: inherit;
+}
+
+.image-container p {
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    transform: translate(-50%, -50%);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: calc(0.6rem + 0.4vw);
+}
+
+.image-logo {
+    position: absolute;
+    background-color: black;
+    opacity: 40%;
+    height: 60px;
+    width: calc(100% - 80px);
+    left: 50%;
+    top: 18%;
+    transform: translate(-50%, -50%);
+    color: wheat;
+    font-size: calc(1rem + 1vw);
+    letter-spacing: 0.1em;
+    font-family: Norse-font, sans-serif;
+}
+
+#odinLogo {
+    background-color: black;
+    overflow: visible;
+    height: 52px;
+    padding: 0px 10px 0px 10px;
+}
+.form-container {
+    flex-direction: column;
+    max-width: 600px;
+    flex: 1 1 auto;
 }
