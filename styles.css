@@ -14,7 +14,7 @@ body {
     background-color: antiquewhite;
 }
 
-.center, .sign-up-container, .form-container {
+.center, .sign-up-container{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,6 +22,7 @@ body {
 
 .content {
     height: 100vh;
+    width: auto;
 }
 
 .sign-up-container {
@@ -38,12 +39,13 @@ body {
     color: black;
     text-align: center;
     height: 100%;
-    padding: 40px;
+    padding: 20px 0px;
 }
 
 .image-container img {
     border-radius: 20px;
     height: inherit;
+    width: 90%;
 }
 
 .image-container p {
@@ -60,7 +62,7 @@ body {
     background-color: black;
     opacity: 40%;
     height: 60px;
-    width: calc(100% - 80px);
+    width: 90%;
     left: 50%;
     top: 18%;
     transform: translate(-50%, -50%);
@@ -73,11 +75,21 @@ body {
 #odinLogo {
     background-color: black;
     overflow: visible;
+    width: auto;
     height: 52px;
     padding: 0px 10px 0px 10px;
 }
+
 .form-container {
-    flex-direction: column;
-    max-width: 600px;
-    flex: 1 1 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0;
+}
+
+.isRandom {
+    color: brown;
+}
+
+.form-header {
+    display: block;
 }
