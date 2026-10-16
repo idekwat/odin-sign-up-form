@@ -17,12 +17,34 @@
             </div>
             
             <div class="form-container">
-                <div class="form-header center">
+                <div class="form-header">
                     <p>This is not a real online service! This is just a <span class="isRandom">random</span> paragraph containing <span class="isRandom">random</span> sentences. 
                         This doesn't make sense since I'm only adding more words to increase the word count.
                         I'm gonna italicize all the <span class="isRandom">random</span>s and add different font styles to them just because.
                     </p>
                 </div>
+                <div class="form-body">
+                    <fieldset>
+                        <legend>Signup Details</legend>
+                        <div class="form-left">
+                            <label for="first_name">First Name</label>
+                            <input type="text" name="first_name" id="first_name" required>
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" required>
+                            <label for="current_password">Password</label>
+                            <input type="current_password" name="password" id="password" required>
+                        </div>
+                        <div class="form-right">
+                            <label for="last_name">Last Name</label>
+                            <input type="text" name="last_name" id="last_name" required>
+                            <label for="contact_number">Contact Number</label>
+                            <input type="tel" name="contact_number" id="contact_number" required>
+                            <label for="confirm_password">Confirm Password</label>
+                            <input type="password" name="confirm_password" id="confirm_password" required>
+                        </div>
+                    </fieldset>
+                </div>
+                <!--
                 <div class="form-body">
                     <fieldset>
                         <legend>Signup Details</legend>
@@ -46,7 +68,8 @@
                         </div>
                     </fieldset>
                 </div>
-                <div class="form-footer center">
+                -->
+                <div class="form-footer">
                     <button type="submit">Create Account</button>
                     <p>Already have an account? <a href=""><span class="login-text">Log in</span></a> .</p>
                 </div>
