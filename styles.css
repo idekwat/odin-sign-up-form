@@ -26,7 +26,7 @@ body {
 .sign-up-container {
     display: inline-flex;
     justify-content: space-between;
-    height: fit-content;
+    height: min(1000px, 80vh);
     width: clamp(100vh, 800px, 68vw);
     background-color: whitesmoke;
     border-radius: 40px 0px;
@@ -40,11 +40,12 @@ body {
     text-align: center;
     height: 100%;
     padding: 20px 0px;
+    width: 100%;
 }
 
 .image-container img {
     border-radius: 20px;
-    height: 80vh;
+    height: 100%;
     width: 90%;
 }
 
@@ -52,9 +53,9 @@ body {
     position: absolute;
     left: 50%;
     bottom: 10%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 0%);
     font-family: 'Courier New', Courier, monospace;
-    font-size: calc(0.6rem + 0.4vw);
+    font-size: calc(0.7rem + 0.2vw);
 }
 
 .image-logo {
@@ -83,10 +84,14 @@ body {
 .form-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    flex: 1;
-    gap: 10px;
-    padding: 20px;
+    height: 100%;
+}
+.form-header, .form-footer {
+    height: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 .form-header p {
     font-size: calc(0.9em + 0.3vw);
@@ -94,22 +99,28 @@ body {
 
 .form-body {
     display: block;
+    height: 34%;
+    margin: 0px 10px;
 }
-.form-body legend {
-    font-size: calc(0.8rem + 0.2vw);
-}
+
 .form-body fieldset {
     display: flex;
-    flex-direction: column;
-}
-.form-body .inline-form {
-    display: flex;
-    vertical-align: auto;
-}
-.form-footer {
-    display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
+    font-size: calc(0.9em + 0.3vw);
+    box-shadow: 6px 6px 18px blanchedalmond;
+}
+.form-left, .form-right {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: auto;
+    margin: 20px;
+}
+
+.form-footer {
+    flex-direction: column;
 }
 .form-footer button {
     padding: 10px;
@@ -121,4 +132,32 @@ body {
 
 .isRandom {
     color: brown;
+}
+
+input {
+    border: none;
+    height: 20px;
+}
+
+input:focus {
+    outline: none;
+}
+
+input:user-invalid {
+    outline: none;
+    box-shadow: 0px 0px 2px red;
+}
+
+button {
+    height: 40px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    background-color: antiquewhite;
+    border: 1px solid beige;
+}
+button:hover {
+    box-shadow: 0px 0px 1px brown;
+}
+button:active {
+    box-shadow: 1px 1px 4px brown;
 }

@@ -28,47 +28,22 @@
                         <legend>Signup Details</legend>
                         <div class="form-left">
                             <label for="first_name">First Name</label>
-                            <input type="text" name="first_name" id="first_name" required>
+                            <input type="text" name="first_name" id="first_name" required minlength="2" maxlength="20" placeholder="Firstname">
                             <label for="email">Email</label>
-                            <input type="email" name="email" id="email" required>
+                            <input type="email" name="email" id="email" required placeholder="user@email.com">
                             <label for="current_password">Password</label>
-                            <input type="current_password" name="password" id="password" required>
+                            <input type="password" name="password" id="password" required minlength="8" placeholder="********">
                         </div>
                         <div class="form-right">
                             <label for="last_name">Last Name</label>
-                            <input type="text" name="last_name" id="last_name" required>
+                            <input type="text" name="last_name" id="last_name" required minlength="2" maxlength="20" placeholder="Lastname">
                             <label for="contact_number">Contact Number</label>
-                            <input type="tel" name="contact_number" id="contact_number" required>
+                            <input type="tel" name="contact_number" id="contact_number" required placeholder="123456789" minlength="9" maxlength="12">
                             <label for="confirm_password">Confirm Password</label>
-                            <input type="password" name="confirm_password" id="confirm_password" required>
+                            <input type="password" name="confirm_password" id="confirm_password" required minlength="8" placeholder="********">
                         </div>
                     </fieldset>
                 </div>
-                <!--
-                <div class="form-body">
-                    <fieldset>
-                        <legend>Signup Details</legend>
-                        <div class="inline-form">
-                            <label for="first_name">First Name</label>
-                            <input type="text" name="first_name" id="first_name" required>
-                            <label for="last_name">Last Name</label>
-                            <input type="text" name="last_name" id="last_name" required>
-                        </div>
-                        <div class="inline-form">
-                            <label for="email">Email</label>
-                            <input type="email" name="email" id="email" required>
-                            <label for="contact_number">Contact Number</label>
-                            <input type="tel" name="contact_number" id="contact_number" required>
-                        </div>
-                        <div class="inline-form">
-                            <label for="current_password">Password</label>
-                            <input type="current_password" name="password" id="password" required>
-                            <label for="confirm_password">Confirm Password</label>
-                            <input type="password" name="confirm_password" id="confirm_password" required>
-                        </div>
-                    </fieldset>
-                </div>
-                -->
                 <div class="form-footer">
                     <button type="submit">Create Account</button>
                     <p>Already have an account? <a href=""><span class="login-text">Log in</span></a> .</p>
